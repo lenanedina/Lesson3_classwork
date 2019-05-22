@@ -19,17 +19,14 @@ namespace ConsoleApp13
 				rezult = a / b;
 				Console.WriteLine(rezult);
 			}
-		}
-
-		static void Main(string[] args)
-		{
+		
 			Console.WriteLine("вычисление");
-			double a = 2, x = 90, result;
-			if (х<60 && a<60)
+			a = 2; double x = 90;
+			if (x<60 && a<60)
 				Console.WriteLine("Количество секунд не может быть больше 60");
 			else
-			{ result = a * x;
-				Console.WriteLine(result);
+			{ rezult = a * x;
+				Console.WriteLine(rezult);
 			}
 		}
 			
