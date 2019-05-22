@@ -20,6 +20,7 @@ namespace ConsoleApp13
 				Console.WriteLine(rezult);
 			}
 		}
+
 		static void Main(string[] args)
 		{
 			Console.WriteLine("вычисление");
