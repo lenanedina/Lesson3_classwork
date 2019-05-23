@@ -6,6 +6,12 @@ namespace ConsoleApp13
 	{
 		static void Main(string[] args)
 		{
+            //task3();
+            task10();
+		}
+
+        private static void task3()
+        {
             Console.WriteLine("Введите время (минут) -> ");
             int minutes = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Введите время (секунд) -> ");
@@ -21,6 +27,19 @@ namespace ConsoleApp13
                     Console.WriteLine("Общее количество секунд: "+result);
                 }
             }
-		}
-	}			
+        }
+
+        private static void task10()
+        {
+            Console.WriteLine("В каком году началась вторая мировая война?");
+            int data = Convert.ToInt32(Console.ReadLine());
+            if(data != 1939) 
+            {
+                Console.WriteLine("Верный ответ - 1939 год");
+            } else {
+                Console.WriteLine("Верный ответ!!!!!");
+            }
+        }
+	}	
+    
 }
