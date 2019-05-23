@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp13
 {
@@ -10,26 +6,21 @@ namespace ConsoleApp13
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("вычисление");
-		  double a = 12, b = 5, rezult;
-			if (b == 0)
-				Console.WriteLine("делитель равен 0");
-			else
-			{
-				rezult = a / b;
-				Console.WriteLine(rezult);
-			}
-		
-			Console.WriteLine("вычисление");
-			a = 2; double x = 90;
-			if (x<60 && a<60)
-				Console.WriteLine("Количество секунд не может быть больше 60");
-			else
-			{ rezult = a * x;
-				Console.WriteLine(rezult);
-			}
+            Console.WriteLine("Введите время (минут) -> ");
+            int minutes = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Введите время (секунд) -> ");
+            int seconds = Convert.ToInt16(Console.ReadLine());
+
+            if (minutes < 0) {
+                Console.WriteLine("Количество минут не может быть меньше 0");
+            } else {
+                if (seconds >60) {
+                    Console.WriteLine("Количество секунд не может быть больше 60");
+                } else {
+                    int result=minutes*60+seconds;
+                    Console.WriteLine("Общее количество секунд: "+result);
+                }
+            }
 		}
-			
-	}
-			
+	}			
 }
