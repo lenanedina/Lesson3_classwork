@@ -7,7 +7,8 @@ namespace ConsoleApp13
 		static void Main(string[] args)
 		{
             //task3();
-            task10();
+            //task10();
+            task15();
 		}
 
         private static void task3()
@@ -40,6 +41,20 @@ namespace ConsoleApp13
                 Console.WriteLine("Верный ответ!!!!!");
             }
         }
+        private static void task15()
+        { 
+            Console.WriteLine("Введите первое число");
+            int numeriс1 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Введите второе число");
+            int numeriс2 = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Ваш ответ?? ");
+            int numeriс3 = Convert.ToInt16(Console.ReadLine());
+            if (numeriс1-numeriс2 == numeriс3) {
+                Console.WriteLine("Ответ верный!!");
+            } else {
+                int result =numeriс1-numeriс2;
+                Console.WriteLine("Ответ не верный.Верный: " +result);
+            }
+        }
 	}	
-    
 }
