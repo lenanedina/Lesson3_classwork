@@ -53,6 +53,7 @@ namespace ConsoleApp13
                 Console.WriteLine("Ответ верный!!");
             } else {
                 int result =numeriс1-numeriс2;
+		    //ооо
                 Console.WriteLine("Ответ не верный.Верный: " +result);
             }
         }
